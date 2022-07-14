@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-7d7436c1","path":"/front/webpack/","title":"\u524D\u8A00","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"webpack\u662F\u4EC0\u4E48\uFF1F","slug":"webpack\u662F\u4EC0\u4E48","children":[]}],"git":{},"filePathRelative":"front/webpack/README.md"}');export{e as data};
