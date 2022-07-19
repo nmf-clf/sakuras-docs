@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-07-01 20:09:18
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-07-14 14:39:56
+ * @LastEditTime: 2022-07-17 15:29:24
  */
 const { defaultTheme } = require('vuepress')
 
@@ -102,7 +102,7 @@ module.exports = {
             "/front/react": [
                 {
                   text: "React",
-                  children: ["/front/react/README.md", "/front/react/React基础.md", "/front/react/React扩展.md"],
+                  children: ["/front/react/README.md", "/front/react/React基础.md", "/front/react/React扩展.md", "/front/react/思考.md"],
                 },
             ],
 
