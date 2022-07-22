@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-07-01 20:09:18
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-07-17 15:29:24
+ * @LastEditTime: 2022-07-22 16:56:37
  */
 const { defaultTheme } = require('vuepress')
 
@@ -82,6 +82,7 @@ module.exports = {
                 children:[
                     { text: "RGB转换", link: "https://www.sioe.cn/yingyong/yanse-rgb-16/" },
                     { text: "DNS查询", link: "https://tools.ipip.net/dns.php" },
+                    { text: "vsCode", link: "" },
                 ]
             },
         ],
