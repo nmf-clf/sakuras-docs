@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-07-01 20:09:18
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-07-28 18:06:27
+ * @LastEditTime: 2022-07-29 17:46:52
  */
 const { defaultTheme } = require('vuepress')
 
@@ -80,9 +80,8 @@ module.exports = {
                 text: "工具",
                 link: "/tools/",
                 children:[
-                    { text: "RGB转换", link: "https://www.sioe.cn/yingyong/yanse-rgb-16/" },
-                    { text: "DNS查询", link: "https://tools.ipip.net/dns.php" },
-                    { text: "vsCode", link: "" },
+                    { text: "在线资源", link: "/tools/online" },
+                    // { text: "vsCode", link: "" },
                 ]
             },
         ],
@@ -107,7 +106,13 @@ module.exports = {
                     "/front/react/React脚手架配置代理", "/front/react/React-Router6.md", "/front/react/思考.md", ],
                 },
             ],
-
+            /* 工具 */
+            "/tools/online": [
+                {
+                  text: "在线资源",
+                  children: ["/tools/online/README.md"],
+                },
+            ],
             /*  */
             "/intro/": [
                 {
