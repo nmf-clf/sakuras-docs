@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-07-01 20:09:18
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-07-29 17:46:52
+ * @LastEditTime: 2022-08-08 12:23:18
  */
 const { defaultTheme } = require('vuepress')
 
@@ -29,6 +29,7 @@ module.exports = {
                             { text: "html", link: "/front/html/" },
                             { text: "css", link: "/front/css/" },
                             { text: "javascript", link: "/front/javascript/" },
+                            { text: "typescript", link: "/front/typescript/" },
                     ]},
                     { text: "框架", link: "", children: [
                             { text: "react", link: "/front/react/" },
@@ -63,6 +64,14 @@ module.exports = {
                         { text: "计算机网络", link: "/cs-basic/network" },
                         { text: "操作系统", link: "/cs-basic/os" },
                     ]},
+                ]
+            },
+            {
+                text: "高频手写",
+                link: "/written/",
+                children:[
+                    { text: "js", link: "/written/js"},
+                    // { text: "cs", link: "/written/cs"},
                 ]
             },
             {
@@ -104,6 +113,12 @@ module.exports = {
                   text: "React",
                   children: ["/front/react/README.md", "/front/react/React基础.md", "/front/react/React扩展.md",
                     "/front/react/React脚手架配置代理", "/front/react/React-Router6.md", "/front/react/思考.md", ],
+                },
+            ],
+            "/front/typescript": [
+                {
+                  text: "typescript",
+                  children: ["/front/typescript/README.md", "/front/typescript/01-快速入门.md", "/front/typescript/02-面向对象.md"],
                 },
             ],
             /* 工具 */

@@ -20,3 +20,7 @@
 [react-components](https://github.com/react-component)
 
 [vue实现GitHub](https://github.com/superman66/vue-axios-github)
+
+### 学习资源
+
+[B站小夏老师](https://space.bilibili.com/8999778)
