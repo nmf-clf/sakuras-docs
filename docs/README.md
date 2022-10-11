@@ -1,16 +1,16 @@
 ---
 lang: zh-CN
-# title: 页面的标题
-description: 页面的描述
+description: 页面的描述 # title: 页面的标题
 home: true
-# heroImage: /logo.jpg
+heroImage: imgs/night.jpg
+heroText: null # 页面的文字标题
 actions:
-  - text: 目录介绍
-    link: /catalogue/
-    type: secondary
-  - text: 快速开始 →
-    link: /quick-start/
-    type: primary
+  # - text: 目录介绍
+  #   link: /catalogue/
+  #   type: secondary
+  # - text: 快速开始 →
+  #   link: /front/html/
+  #   type: primary
 features:
 - title: ''
   details: 读很多的书
