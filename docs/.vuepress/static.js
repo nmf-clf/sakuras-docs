@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-10-08 11:14:36
+ * @LastEditTime: 2022-10-14 16:17:47
  */
 module.exports = {
     navbar: [
@@ -24,9 +24,15 @@ module.exports = {
                         { text: "react", link: "/front/react/" },
                         { text: "vue", link: "/front/vue/" },
                 ]},
+                { text: "跨平台", link: "", children: [
+                    { text: "小程序", link: "/front/applet" },
+                ]},
                 { text: "构建工具", link: "", children:[
                         { text: "webpack", link: "/front/webpack/" },
                         { text: "vite", link: "/front/vite/" },
+                ]},
+                { text: "其他", link: "", children:[
+                    { text: "git", link: "/front/git/" },
                 ]},
             ]
         },
@@ -35,8 +41,8 @@ module.exports = {
             link: "/after/",
             children:[
                 { text: "基础", link: "", children:[
-                    { text: "Nodejs", link: "/after/nodejs/" },
-                    { text: "Java", link: "/after/java/" },
+                    { text: "nodejs", link: "/after/nodejs/" },
+                    // { text: "Java", link: "/after/java/" },
                 ]},
                 { text: "框架", link: "", children: [
                     { text: "express", link: "/after/express/" },
@@ -59,12 +65,8 @@ module.exports = {
             text: "高频手写",
             link: "/written/",
         },
-        /* {
-            text: "功能",
-            link: "/function/",
-        }, */
         {
-            text: "项目升级",
+            text: "项目",
             link: "/refactoring/",
         },
         {
@@ -92,74 +94,27 @@ module.exports = {
     ],
     sidebar: {
         /* 前端 */
-        "/front/javascript": [
-            {
-              text: "JavaScript",
-              children: ["/front/javascript/README.md", "/front/javascript/01-基础.md", "/front/javascript/02-高级.md", "/front/javascript/03-ES6.md"],
-            },
-        ],
-        "/front/vue": [
-            {
-              text: "Vue",
-              children: ["/front/vue/README.md", "/front/vue/vue-basic.md", "/front/vue/vue3.md", "/front/vue/vue-cli.md"],
-            },
-        ],
-        "/front/react": [
-            {
-              text: "React",
-              children: ["/front/react/README.md", "/front/react/React基础.md", "/front/react/React扩展.md",
-                "/front/react/React脚手架配置代理", "/front/react/React-Router6.md", "/front/react/思考.md", 
-                "/front/react/面向面试.md"
-              ],
-            },
-        ],
-        "/front/typescript": [
-            {
-              text: "typescript",
-              children: ["/front/typescript/README.md", "/front/typescript/01-快速入门.md", "/front/typescript/02-面向对象.md"],
-            },
-        ],
+        "/front/javascript": require('../front/javascript/sidebar'),
+        "/front/vue": require('../front/vue/sidebar'),
+        "/front/react": require('../front/react/sidebar'),
+        "/front/typescript": require('../front/typescript/sidebar'),
+        "/front/applet": require('../front/applet/sidebar'),
+        "/front/webpack": require('../front/webpack/sidebar'),
+        "/front/git": require('../front/git/sidebar'),
+        /* 后端 */
+        "/after/nodejs": require('../after/nodejs/sidebar'),
+        "/after/express": require('../after/express/sidebar'),
         /* 高频手写 */
-        "/written/": [
-            {
-              text: "高频手写",
-              children: ["/written/README.md", "/written/01-js.md"],
-            },
-        ],
+        "/written/": require('../written/sidebar'),
         /* 原理 */
-        "/origin/webpack/": [
-            {
-                text: "webpack原理分析",
-                children: ["/origin/webpack/README.md", "/origin/webpack/loader.md", "/origin/webpack/plugin.md", "/origin/webpack/summary.md"],
-            },
-        ],
+        "/origin/webpack/": require('../origin/webpack/sidebar'),
         /* 项目升级 */
-        "/refactoring/": [
-            {   
-                text: "项目升级/重构",
-                children: ["/refactoring/README.md"],
-            }
-        ],
+        "/refactoring/": require('../refactoring/sidebar'),
         /* 面试总结 */
-        "/interview/": [
-            {
-              text: "面试总结",
-              children: ["/interview/README.md", "/interview/performance.md"],
-            },
-        ],
-        /* 工具 */
-        "/tools/online": [
-            {
-              text: "在线资源",
-              children: ["/tools/online/README.md"],
-            },
-        ],
+        "/interview/": require('../interview/sidebar'),
+        // /* 工具 */
+        "/tools/online": require('../tools/online/sidebar'),
         /* MD入门 */
-        "/markdown/": [
-            {   
-                text: "Markdown基本语法",
-                children: ["/markdown/README.md", "/markdown/其他.md"],
-            }
-        ],
+        "/markdown/": require('../markdown/sidebar'),
     },
 }

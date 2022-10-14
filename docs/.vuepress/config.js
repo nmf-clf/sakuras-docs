@@ -2,7 +2,7 @@
  * @Author: mengfei
  * @Date: 2022-07-01 20:09:18
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-10-08 10:18:39
+ * @LastEditTime: 2022-10-14 09:30:13
  */
 const { defaultTheme } = require('vuepress')
 const { navbar, sidebar } = require('./static')
@@ -21,7 +21,7 @@ module.exports = {
     // },
     theme: defaultTheme({
         logo: "/imgs/night.jpg",
-        lastUpdated: false,
+        lastUpdated: 'Last Updated',
         navbar,
         sidebar,
     }),
