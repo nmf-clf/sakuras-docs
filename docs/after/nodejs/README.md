@@ -8,6 +8,7 @@ nodeJS是什么？
 - [英文文档](https://nodejs.org/en/)
 - [菜鸟教程](https://www.runoob.com/nodejs/nodejs-tutorial.html)
 - [W3School](https://www.w3cschool.cn/nodejs/)
+- [B站kerwin教程](https://www.bilibili.com/video/BV1rA4y1Z7fd/?spm_id_from=333.337.search-card.all.click)：讲解的很详细，循序渐进
 <!-- - [国外NodeJs视频教程](https://www.bilibili.com/video/BV1FY4y1H7ka/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=9ec497abd95f8d7ad3a7efffc71c7ee3) 
     > - 绝对的基础知识（多动手，多做笔记）
     > - 后端如何开发和实际工作

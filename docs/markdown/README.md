@@ -28,6 +28,13 @@ _斜体_
 ---
 ```
 
+## 空格
+一个汉字占用两个空格大小，所以使用4个空格就可以达到首行缩进2个汉字的效果。例如：\
+&ensp;&ensp;1个空格大小的表示：`&ensp;`或`&#8194`，使用2个可以缩进1个汉字的效果 \
+&emsp;&emsp;2个空格大小的表示: `&emsp;`或`&#8195` 使用2个可以缩进2个汉字的效果`(推荐使用)` \
+&nbsp;&nbsp;&nbsp;&nbsp;不换行空格的表示：`&nbsp;`或`&#160`，使用4个可以缩进1个汉字的效果 \
+　　也可以使用中文全角，按1个空格就是一个汉字
+
 ## 列表
 ### 无序列表
 ```md
@@ -104,3 +111,14 @@ var obj = new Object();
 ```
 <!-- more -->
 
+## 表格
+```md
+Title1 | Title2 | Title3 <!-- 表格标题 -->
+-|-|-  <!-- 这一行必须要有，且不能修改 - 为其他 -->
+column1,row1 | column2,row1 | column3,row1  <!-- 表格内容 -->
+column1,row2 | column2,row2 | column3,row2 
+```
+Title1 | Title2 | Title3
+-|-|-
+column1,row1 | column2,row1 | column3,row1
+column1,row2 | column2,row2 | column3,row2 

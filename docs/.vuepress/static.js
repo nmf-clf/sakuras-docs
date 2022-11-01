@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-10-14 16:17:47
+ * @LastEditTime: 2022-10-27 16:16:03
  */
 module.exports = {
     navbar: [
@@ -15,24 +15,25 @@ module.exports = {
             link: "/front/",
             children:[
                 { text: "基础", link: "", children:[
-                        { text: "html", link: "/front/html/" },
-                        { text: "css", link: "/front/css/" },
-                        { text: "javascript", link: "/front/javascript/" },
-                        { text: "typescript", link: "/front/typescript/" },
+                        { text: "Html", link: "/front/html/" },
+                        { text: "Css", link: "/front/css/" },
+                        { text: "JavaScript", link: "/front/javascript/" },
+                        { text: "TypeScript", link: "/front/typescript/" },
                 ]},
                 { text: "框架", link: "", children: [
-                        { text: "react", link: "/front/react/" },
-                        { text: "vue", link: "/front/vue/" },
+                        { text: "React", link: "/front/react/" },
+                        { text: "Vue", link: "/front/vue/" },
                 ]},
                 { text: "跨平台", link: "", children: [
                     { text: "小程序", link: "/front/applet" },
                 ]},
                 { text: "构建工具", link: "", children:[
-                        { text: "webpack", link: "/front/webpack/" },
-                        { text: "vite", link: "/front/vite/" },
+                        { text: "Webpack", link: "/front/webpack/" },
+                        { text: "Vite", link: "/front/vite/" },
+                        { text: "Turbopack", link: "/front/turbopack/" },
                 ]},
                 { text: "其他", link: "", children:[
-                    { text: "git", link: "/front/git/" },
+                    { text: "Git", link: "/front/git/" },
                 ]},
             ]
         },
@@ -41,11 +42,14 @@ module.exports = {
             link: "/after/",
             children:[
                 { text: "基础", link: "", children:[
-                    { text: "nodejs", link: "/after/nodejs/" },
+                    { text: "NodeJs", link: "/after/nodejs/" },
                     // { text: "Java", link: "/after/java/" },
                 ]},
                 { text: "框架", link: "", children: [
-                    { text: "express", link: "/after/express/" },
+                    { text: "Express", link: "/after/express/" },
+                ]},
+                { text: "数据库", link: "", children: [
+                    { text: "MongoDB", link: "/after/mongodb/" },
                 ]},
             ]
         },
@@ -77,8 +81,12 @@ module.exports = {
             ]
         },
         {
-            text: "面试总结",
+            text: "面试",
             link: "/interview/",
+            children:[
+                { text: "前端", link: "/interview/front/"},
+                { text: "后端", link: "/interview/after/"},
+            ]
         },
         {
             text: "工具",
@@ -104,14 +112,16 @@ module.exports = {
         /* 后端 */
         "/after/nodejs": require('../after/nodejs/sidebar'),
         "/after/express": require('../after/express/sidebar'),
+        "/after/mongodb": require('../after/mongodb/sidebar'),
         /* 高频手写 */
         "/written/": require('../written/sidebar'),
         /* 原理 */
         "/origin/webpack/": require('../origin/webpack/sidebar'),
         /* 项目升级 */
         "/refactoring/": require('../refactoring/sidebar'),
-        /* 面试总结 */
-        "/interview/": require('../interview/sidebar'),
+        /* 面试 */
+        "/interview/front": require('../interview/front/sidebar'),
+        "/interview/after": require('../interview/after/sidebar'),
         // /* 工具 */
         "/tools/online": require('../tools/online/sidebar'),
         /* MD入门 */
