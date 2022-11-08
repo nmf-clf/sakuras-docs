@@ -6,5 +6,6 @@ javascript是什么？
 - [百度百科释义](https://baike.baidu.com/item/JavaScript/321142?fr=aladdin)
 - [菜鸟教程(js参考手册)](https://www.runoob.com/js/js-tutorial.html)
 - [W3school(js参考手册)](https://www.jb51.net/w3school/js/js_reference.htm)
+- [MDN手册中文网(权威)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 - [现代js教程(推荐)](https://zh.javascript.info/)
 <!-- - [php中文网(js中文参考手册)](https://www.php.cn/course/26.html) -->

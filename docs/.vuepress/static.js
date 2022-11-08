@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-11-07 17:14:37
+ * @LastEditTime: 2022-11-08 15:06:09
  */
 module.exports = {
     navbar: [
@@ -109,7 +109,7 @@ module.exports = {
     ],
     sidebar: {
         /* 前端 */
-        "/front/javascript": require('../front/javascript/sidebar'),
+        "/front/javascript": require('../front/javascript/zIndex'),
         "/front/vue": require('../front/vue/sidebar'),
         "/front/react": require('../front/react/sidebar'),
         "/front/typescript": require('../front/typescript/zIndex'),
