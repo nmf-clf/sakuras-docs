@@ -1,6 +1,8 @@
 
 # 快速入门
 
+[通俗易懂的TS基础知识总结](https://juejin.cn/post/7063970883227877390) 
+
 ## 1. TypeScript简介
 
 1. TypeScript是JavaScript的超集。
