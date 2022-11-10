@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-11-08 15:06:09
+ * @LastEditTime: 2022-11-10 18:49:10
  */
 module.exports = {
     navbar: [
@@ -115,6 +115,7 @@ module.exports = {
         "/front/typescript": require('../front/typescript/zIndex'),
         "/front/applet": require('../front/applet/sidebar'),
         "/front/webpack": require('../front/webpack/sidebar'),
+        "/front/vite": require('../front/vite/zIndex'),
         "/front/git": require('../front/git/sidebar'),
         /* 后端 */
         "/after/nodejs": require('../after/nodejs/sidebar'),
