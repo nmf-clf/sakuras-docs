@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-11-10 18:49:10
+ * @LastEditTime: 2022-11-21 10:50:07
  */
 module.exports = {
     navbar: [
@@ -84,18 +84,18 @@ module.exports = {
             ]
         },
         {
-            text: "面试",
-            link: "/interview/",
-            children:[
-                { text: "前端", link: "/interview/front/"},
-                { text: "后端", link: "/interview/after/"},
-            ]
-        },
-        {
             text: "工具",
             link: "/tools/",
             children:[
                 { text: "在线资源", link: "/tools/online" },
+            ]
+        },
+        {
+            text: "InterView",
+            link: "/interview/",
+            children:[
+                { text: "前端", link: "/interview/front/"},
+                { text: "后端", link: "/interview/after/"},
             ]
         },
         {
