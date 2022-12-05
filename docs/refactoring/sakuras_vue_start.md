@@ -1,4 +1,4 @@
-# Sakuras.group网站搭建
+# 个人网站搭建
 该笔记记录下个人网站 [sakuras.group](sakuras.group) 搭建过程：
 - 前端项目使用`vue3 + element-plus + less`，基于`vue-cli`开发
 - 后端项目使用`nodejs + mongodb`

@@ -2,7 +2,7 @@
  * @Author: mengfei
  * @Date: 2022-07-01 20:09:18
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-11-06 15:25:26
+ * @LastEditTime: 2022-12-04 20:11:10
  */
 const { defaultTheme } = require('vuepress')
 const { navbar, sidebar } = require('./static')
@@ -24,5 +24,6 @@ module.exports = {
         lastUpdated: 'Last Updated',
         navbar,
         sidebar,
+        sidebarDepth: 2, //http://caibaojian.com/vuepress/default-theme-config/#%E5%B5%8C%E5%A5%97%E6%A0%87%E9%A2%98%E9%93%BE%E6%8E%A5-nested-header-links
     }),
 }

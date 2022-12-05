@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-11-21 10:50:07
+ * @LastEditTime: 2022-12-05 17:45:36
  */
 module.exports = {
     navbar: [
@@ -70,7 +70,7 @@ module.exports = {
         },
         {
             text: "高频手写",
-            link: "/written/",
+            link: "/written/01-js.md",
         },
         {
             text: "项目",
@@ -92,11 +92,11 @@ module.exports = {
         },
         {
             text: "InterView",
-            link: "/interview/",
-            children:[
-                { text: "前端", link: "/interview/front/"},
-                { text: "后端", link: "/interview/after/"},
-            ]
+            link: "/interview/front/performance.md",
+            // children:[
+            //     { text: "前端", link: "/interview/front/"},
+            //     { text: "后端", link: "/interview/after/"},
+            // ]
         },
         {
             text: "VSCode",
@@ -129,9 +129,8 @@ module.exports = {
         /* 项目升级 */
         "/refactoring/": require('../refactoring/zIndex'),
         /* 面试 */
-        "/interview/front": require('../interview/front/sidebar'),
-        "/interview/after": require('../interview/after/sidebar'),
-        // /* 工具 */
+        "/interview/": require('../interview/sidebar'),
+        /* 工具 */
         "/tools/online": require('../tools/online/sidebar'),
         /* VSCode */
         "/vscode/": require('../vscode/zIndex'),
