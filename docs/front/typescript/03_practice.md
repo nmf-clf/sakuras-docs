@@ -340,3 +340,6 @@ img {
 
 ## 2. 贪吃蛇
 
+## 3. axios封装
+[基于 ts 的 axios 封装](https://juejin.cn/post/6969070102868131853)
+
