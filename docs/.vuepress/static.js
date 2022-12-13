@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-12-05 17:45:36
+ * @LastEditTime: 2022-12-13 22:35:29
  */
 module.exports = {
     navbar: [
@@ -16,7 +16,7 @@ module.exports = {
             children:[
                 { text: "基础", link: "", children:[
                         { text: "Html", link: "/front/html/" },
-                        { text: "Css", link: "/front/css/" },
+                        { text: "Css / Less", link: "/front/css/" },
                         { text: "JavaScript", link: "/front/javascript/" },
                         { text: "TypeScript", link: "/front/typescript/" },
                 ]},

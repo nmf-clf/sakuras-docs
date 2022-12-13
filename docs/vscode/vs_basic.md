@@ -5,6 +5,7 @@
 ## 常用快捷键命令
 - 打开命令面板: `Ctrl(Command) + Shift + P`
 - 打开工作区设置: `Ctrl(Command) + Shift + P` 👉 输入`首选项：工作区设置`
+- 设置中文：打开命令面板 👉 输入`configurelanguage` 然后回车选择`zh-ch`
 
 ## 通用
 
@@ -29,3 +30,5 @@ ErrorLens | Alexander | 把你的 VS Code 底部问题栏的错误下直接显�
 插件名 | 作者 | 作用
 -|-|-
 Vue VSCode Snippets | sarah.drasner | 支持vue3 + ts自动补全
+[Vue Language Features(Volar)](https://github.com/johnsoncodehk/volar) | vue | vue语法插件，ts语法支持
+Vetur | Pine Wu | vue语法插件，ts语法支持，与Volar冲突
