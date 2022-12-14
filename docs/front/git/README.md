@@ -387,3 +387,11 @@ git push origin --delete master
 ```bash
 git push --force origin master
 ```
+
+## 问题
+1. Failed to connect to github.com port 443: Timed out.
+```bash
+git config --global --unset http.proxy
+ 
+git config --global --unset https.proxy
+```
