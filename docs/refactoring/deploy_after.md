@@ -100,7 +100,11 @@ gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC)
 - 并且打开`MongoDB`，在配置项里把BindIP改为`0.0.0.0`，目的是为了支持本地开发时后台服务直接连接到远程数据库，操作服务器里的数据库；
 
 ![安装宝塔](./imgs/21.jpg)
-- 然后启动MongoDB的服务状态即可，如果启动失败，则可以根据日志提示找出错误解决，必须启动成功才可以进行下一步。
+- 然后启动MongoDB的服务状态即可，如果启动失败，则可以根据日志提示找出错误解决，必须启动成功才可以进行下一步。[常见问题](https://blog.csdn.net/qq_39640321/article/details/108662662)
+```js
+> sudo ./mongod -f `mongodb.conf绝对路径`
+例如: sudo ./mongod -f /www/server/mongodb/config.conf
+```
 
 - 如果我们在本地开发环境，我们需要在本地node服务项目里，连接到远程数据库，因为之前我们已经把BindIP修改为了`0.0.0.0`，所以直接连接即可；
     - node项目启动文件

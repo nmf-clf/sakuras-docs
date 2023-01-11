@@ -1,5 +1,8 @@
 # 网站性能优化
 
+[前端大全-性能优化](https://mp.weixin.qq.com/s/xBYid9NZiMvNlbQLNEpp8w) \
+[雅虎35条军规](https://www.jianshu.com/p/4cbcd202a591)
+
 性能优化，一般的话，我们可以根据页面从访问到渲染的流程，分为两个方面：`网络方面`和`浏览器方面`<br>
 - 第一个的话是`网络方面` <br>
     如果是网络方面的，主要涉及DNS解析（增加DNS缓存时间） ，TCP链接，HTTP响应，一般的话DNF解析和TCP链接方面的优化前端优化空间小
