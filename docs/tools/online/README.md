@@ -18,6 +18,14 @@
 [vue实现GitHub](https://github.com/superman66/vue-axios-github) \
 [优质开源项目集合](https://github.com/521xueweihan/HelloGitHub)
 
+### UI设计
+[Type Scale 字体大小参考]() \
+[Happy Hues 配色设计]() \
+[Fontjoy 字体生成]() \
+[CSS Peeper 快速查看 CSS 样式 **强推！**]() \
+[avataaars generator 头像生成]() \
+[brumm.af 阴影效果](https://brumm.af/)
+
 ### 学习资源
 
 [B站小夏老师](https://space.bilibili.com/8999778) ：汇集了常见的面试题 \

@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-12-13 22:35:29
+ * @LastEditTime: 2023-03-06 15:26:15
  */
 module.exports = {
     navbar: [
@@ -16,7 +16,7 @@ module.exports = {
             children:[
                 { text: "基础", link: "", children:[
                         { text: "Html", link: "/front/html/" },
-                        { text: "Css / Less", link: "/front/css/" },
+                        { text: "Css / Less", link: "/front/css/CSS基础.md" },
                         { text: "JavaScript", link: "/front/javascript/" },
                         { text: "TypeScript", link: "/front/typescript/" },
                 ]},
@@ -109,6 +109,7 @@ module.exports = {
     ],
     sidebar: {
         /* 前端 */
+        "/front/css": require('../front/css/zIndex'),
         "/front/javascript": require('../front/javascript/zIndex'),
         "/front/vue": require('../front/vue/sidebar'),
         "/front/react": require('../front/react/sidebar'),
@@ -120,7 +121,7 @@ module.exports = {
         /* 后端 */
         "/after/nodejs": require('../after/nodejs/sidebar'),
         "/after/express": require('../after/express/sidebar'),
-        "/after/mongodb": require('../after/mongodb/sidebar'),
+        "/after/mongodb": require('../after/mongodb/zIndex'),
         "/after/nginx": require('../after/nginx/zIndex'),
         /* 高频手写 */
         "/written/": require('../written/sidebar'),

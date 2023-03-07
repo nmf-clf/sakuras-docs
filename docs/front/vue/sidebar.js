@@ -2,7 +2,7 @@
  * @Author: niumengfei
  * @Date: 2022-10-14 09:46:36
  * @LastEditors: niumengfei
- * @LastEditTime: 2022-10-14 14:29:13
+ * @LastEditTime: 2023-01-28 10:06:02
  */
 module.exports = [
     {
@@ -12,6 +12,7 @@ module.exports = [
         "/front/vue/_vue核心基础.md",
         "/front/vue/_vue组件化编程.md",
         "/front/vue/_vue组件进阶.md",
+        "/front/vue/_vue动画.md",
         "/front/vue/_vue脚手架.md",
         "/front/vue/_vue网络请求.md",
         "/front/vue/_vue-router.md",
