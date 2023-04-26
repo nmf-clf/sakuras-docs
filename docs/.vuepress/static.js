@@ -1,8 +1,8 @@
 /*
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
- * @LastEditors: niumengfei
- * @LastEditTime: 2023-03-06 15:26:15
+ * @LastEditors: niumengfei 870424431@qq.com
+ * @LastEditTime: 2023-04-25 10:50:21
  */
 module.exports = {
     navbar: [
@@ -15,14 +15,14 @@ module.exports = {
             link: "/front/",
             children:[
                 { text: "基础", link: "", children:[
-                        { text: "Html", link: "/front/html/" },
+                        { text: "Html", link: "/front/html/HTML基础.md" },
                         { text: "Css / Less", link: "/front/css/CSS基础.md" },
                         { text: "JavaScript", link: "/front/javascript/" },
                         { text: "TypeScript", link: "/front/typescript/" },
                 ]},
                 { text: "框架", link: "", children: [
-                        { text: "React", link: "/front/react/" },
-                        { text: "Vue", link: "/front/vue/" },
+                        { text: "React", link: "/front/react/react基础.md" },
+                        { text: "Vue", link: "/front/vue/_vue核心基础.md" },
                 ]},
                 { text: "跨平台", link: "", children: [
                     { text: "小程序", link: "/front/applet" },
@@ -109,6 +109,7 @@ module.exports = {
     ],
     sidebar: {
         /* 前端 */
+        "/front/html": require('../front/html/zIndex'),
         "/front/css": require('../front/css/zIndex'),
         "/front/javascript": require('../front/javascript/zIndex'),
         "/front/vue": require('../front/vue/sidebar'),
