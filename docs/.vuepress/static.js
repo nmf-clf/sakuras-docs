@@ -1,8 +1,8 @@
 /*
  * @Author: niumengfei
  * @Date: 2022-10-08 09:46:47
- * @LastEditors: niumengfei 870424431@qq.com
- * @LastEditTime: 2023-04-25 10:50:21
+ * @LastEditors: niumengfei
+ * @LastEditTime: 2023-04-28 11:10:44
  */
 module.exports = {
     navbar: [
@@ -43,7 +43,7 @@ module.exports = {
             children:[
                 { text: "基础", link: "", children:[
                     { text: "NodeJs", link: "/after/nodejs/" },
-                    // { text: "Java", link: "/after/java/" },
+                    { text: "Java", link: "/after/java/" },
                 ]},
                 { text: "框架", link: "", children: [
                     { text: "Express", link: "/after/express/" },
@@ -58,13 +58,13 @@ module.exports = {
         },
         {
             text: "计算机基础",
-            link: "/cs-basic/",
+            link: "/cs/",
             children:[
                 { text: "基础", link: "", children:[
-                    { text: "数据结构", link: "/cs-basic/structure" },
-                    { text: "计算机组成原理", link: "/cs-basic/comprise" },
-                    { text: "计算机网络", link: "/cs-basic/network" },
-                    { text: "操作系统", link: "/cs-basic/os" },
+                    { text: "数据结构", link: "/cs/structure/index.md" },
+                    { text: "计算机组成原理", link: "/cs/comprise" },
+                    { text: "计算机网络", link: "/cs/network" },
+                    { text: "操作系统", link: "/cs/os" },
                 ]},
             ]
         },
@@ -121,9 +121,15 @@ module.exports = {
         "/front/git": require('../front/git/sidebar'),
         /* 后端 */
         "/after/nodejs": require('../after/nodejs/sidebar'),
+        "/after/java/": require('../after/java/zIndex'),
         "/after/express": require('../after/express/sidebar'),
         "/after/mongodb": require('../after/mongodb/zIndex'),
         "/after/nginx": require('../after/nginx/zIndex'),
+        /* 计算机基础 */
+        "/cs/structure/": require('../cs/structure/zIndex'),
+        "/cs/comprise/": require('../cs/comprise/zIndex'),
+        "/cs/network/": require('../cs/network/zIndex'),
+        "/cs/os/": require('../cs/os/zIndex'),
         /* 高频手写 */
         "/written/": require('../written/sidebar'),
         /* 原理 */

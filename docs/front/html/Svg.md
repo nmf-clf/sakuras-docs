@@ -93,24 +93,55 @@
         - butt 用直边结束线段，它是常规做法，线段边界 90 度垂直于描边的方向、贯穿它的终点。
         - square 的效果差不多，但是会稍微超出实际路径的范围，超出的大小由stroke-width控制。
         - round 表示边框的终点是圆角，圆角的半径也是由stroke-width控制的。
+    - [stroke-linejoin](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Fills_and_Strokes) 用来控制两条描边线段之间，用什么方式连接
+        - miter 是默认值，表示用方形画笔在连接处形成尖角
+        - round 表示用圆角连接，实现平滑效果
+        - bevel 连接处会形成一个斜接
+- 其他属性
+    - fill-rule 用于定义如何给图形重叠的区域上色
+    - stroke-miterlimit 定义什么情况下绘制或不绘制边框连接的miter效果
+    - stroke-dashoffset 定义虚线开始的位置
+- CSS 设置
+    - style 标签
+    - defs 标签：表示定义，这里面可以定义一些不会在 SVG 图形中出现、但是可以被其他元素使用的元素。
+### 渐变
+- 线性渐变 \
 
-<CodeGroup>
-  <CodeBlock title="HTML" lang="html">
-    <div>
-      <h1>Hello World!</h1>
-      <p>This is an example of HTML code.</p>
-    </div>
-  </CodeBlock>
+    线性渐变沿着直线改变颜色，要插入一个线性渐变，你需要在 SVG 文件的defs 元素内部，创建一个`<linearGradient>`节点 \
+    
+    - stop 节点：通过指定位置的 offset（偏移）属性和 stop-color（颜色中值）属性来说明在渐变的特定位置上应该是什么颜色
+    - stop-opacity：设置某个位置的半透明度
+    - x1 x2 y1 y2 分别代表渐变走向
+    ```xml
+    <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="50%" stop-color="black" stop-opacity="0"/>
+        <stop offset="100%" stop-color="blue"/>
+    </linearGradient>
+    ```
+- 径向渐变 \
 
-  <CodeBlock title="CSS" lang="css">
-    body {
-      background-color: #f5f5f5;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      color: #666;
-    }
-  </CodeBlock>
-</CodeGroup>
+    径向渐变与线性渐变相似，只是它是从一个点开始发散绘制渐变。创建径向渐变需要在文档的defs中添加一个`<radialGradient>`元素 \
+    - stop 方法同上
+    - cx cy r fx fy：cx cy 描述了渐变的边缘位置，fx fy 描述了渐变的中心
+    - spreadMethod：该属性控制了当渐变到达终点的行为，但是此时该对象尚未被填充颜色
+        - Pad 就是目前我们见到的效果，即当渐变到达终点时，最终的偏移颜色被用于填充对象剩下的空间
+        - reflect 会让渐变一直持续下去，不过它的效果是与渐变本身是相反的，以 100% 偏移位置的颜色开始，逐渐偏移到 0% 位置的颜色，然后再回到 100% 偏移位置的颜色
+        - repeat 也会让渐变继续，但是它不会像 reflect 那样反向渐变，而是跳回到最初的颜色然后继续渐变
+    - gradientUnits：描述了用来描述渐变的大小和方向的单元系统
+        - objectBoundingBox (默认值)
+        - userSpaceOnUse 
+    ```xml
+    <radialGradient id="Gradient" cx="60" cy="60" r="50"  fx="35" fy="35" spreadMethod="pad" gradientUnits="userSpaceOnUse" ></radialGradient>
+    ```
+### Patterns
+跟渐变一样，`<pattern>` 需要放在 SVG 文档的 `<defs>` 内部。
+
+### 文本
+
+
+## 其他
+
+### 图片转svg在线工具
+[convertio](https://convertio.co/zh/)：在线免费转换工具 \
+[vectormagic](https://zh.vectormagic.com/)：在线收费转换工具，支持图片转 svg 带色彩，但是要钱。。。

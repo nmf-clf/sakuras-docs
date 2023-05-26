@@ -1,4 +1,4 @@
-# 前端工程化与 webpack 基础
+# Webpack 基础
 
 ---
 
